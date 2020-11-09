@@ -35,7 +35,9 @@ from dpr.utils.model_utils import setup_for_distributed_mode, move_to_device, ge
     get_model_file, get_model_obj, load_states_from_checkpoint
 
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+# logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
+
 if (logger.hasHandlers()):
     logger.handlers.clear()
 console = logging.StreamHandler()
@@ -90,7 +92,8 @@ class BiEncoderTrainer(object):
         # filter those without positive ctx
         data = [r for r in data if len(r['positive_ctxs']) > 0]
         logger.info('Total cleaned data size: {}'.format(len(data)))
-
+        print(data)
+        exit(0)
         return ShardedDataIterator(data, shard_id=self.shard_id,
                                    num_shards=self.distributed_factor,
                                    batch_size=batch_size, shuffle=shuffle, shuffle_seed=shuffle_seed, offset=offset,
