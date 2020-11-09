@@ -94,6 +94,7 @@ class BiEncoderTrainer(object):
         logger.info('Total cleaned data size: {}'.format(len(data)))
         print(data)
         exit(0)
+        print('*'*50)
         return ShardedDataIterator(data, shard_id=self.shard_id,
                                    num_shards=self.distributed_factor,
                                    batch_size=batch_size, shuffle=shuffle, shuffle_seed=shuffle_seed, offset=offset,
