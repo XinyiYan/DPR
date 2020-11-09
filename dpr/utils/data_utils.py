@@ -48,6 +48,7 @@ def read_data_from_json_files(paths: List[str], upsample_rates: List = None) -> 
             data = data * upsample_factor
             results.extend(data)
             logger.info('Aggregated data size: {}'.format(len(results)))
+            logger.info(results)
     return results
 
 
