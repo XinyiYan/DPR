@@ -93,7 +93,6 @@ class BiEncoderTrainer(object):
         data = [r for r in data if len(r['positive_ctxs']) > 0]
         logger.info('Total cleaned data size: {}'.format(len(data)))
         print(data[0])
-        print('Length of the data : ',len(data))
         print('#'*50)
         exit(0)
         return ShardedDataIterator(data, shard_id=self.shard_id,
