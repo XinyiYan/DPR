@@ -10,10 +10,11 @@ module load python/3.6
 
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
+pip install --no-index --upgrade pip
 pip install torch --no-index
 pip install --no-index torch torchvision torchtext torchaudio
-pip install wget
-
+pip install --no-index wget
+pip install --no-index transformers
 
 module load python/3.6
 module load nixpkgs/16.09  gcc/7.3.0
