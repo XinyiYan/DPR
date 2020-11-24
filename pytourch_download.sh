@@ -14,7 +14,7 @@ source /home/ahamsala/torch_DPR/bin/activate
 # pip install --no-index torch torchvision torchtext torchaudio
 # pip install --no-index transformers
 
-# module load nixpkgs/16.09  gcc/7.3.0
+# module load nixpkgs/16.09  gcc/7.3.0  cuda/10.0.130
 # module load faiss/1.6.2
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # pip install .
@@ -59,3 +59,12 @@ python -m torch.distributed.launch \
 	--num_train_epochs 1 \
 	--dev_batch_size 16 \
  	--val_av_rank_start_epoch 1
+
+
+ python3 dense_retriever.py \
+  --model_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/output/dpr_biencoder.0.919" \
+  --ctx_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/wikipedia_split/psgs_w100_subset.tsv" \
+  --qa_file "data/retriever/qas/nq-test.csv" \
+  --encoded_ctx_file inference_0.pkl \
+  --out_file result \
+  --n-docs 10
