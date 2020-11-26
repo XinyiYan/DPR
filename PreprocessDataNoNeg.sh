@@ -19,10 +19,6 @@ tar xzf collectionandqueries.tar.gz
 wget http://trec-car.cs.unh.edu/datareleases/v2.0/paragraphCorpus.v2.0.tar.xz
 tar xf paragraphCorpus.v2.0.tar.xz
 
-# Download qid -> query (~42 MB)
-wget https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz
-tar xzf queries.tar.gz
-
 # MARCO duplicate file (id:[dup list of ids])
 wget http://boston.lti.cs.cmu.edu/Services/treccast19/duplicate_list_v1.0.txt
 
