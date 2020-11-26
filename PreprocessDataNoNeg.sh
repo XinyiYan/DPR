@@ -12,7 +12,7 @@ mkdir json_data  # Make directory to store all json outputted data
 # Download collection (~2.9 GB)
 #wget https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz # USED for both TREC CAsT and MSMARCO data creations
 
-https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
+wget https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
 tar xzf collectionandqueries.tar.gz
 
 # CAR Collection (largest)
