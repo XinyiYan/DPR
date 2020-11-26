@@ -23,6 +23,7 @@ source /home/ahamsala/torch_DPR/bin/activate
 # module load faiss/1.6.2
 # deactivate
 source /home/ahamsala/torch_DPR/bin/activate
+# source $SLURM_TMPDIR/env/bin/activate
 python --version
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -36,42 +37,42 @@ python --version
 # cd data/retriever
 # wget https://dl.fbaipublicfiles.com/dpr/data/retriever/nq-test.qa.csv -O nq-test.qa.csv
 
-# python -m torch.distributed.launch \
-# 	--nproc_per_node=1 train_dense_encoder.py \
-# 	--max_grad_norm 2.0 \
-# 	--encoder_model_type hf_bert \
-# 	--pretrained_model_cfg bert-base-uncased \
-# 	--seed 12345 \
-# 	--sequence_length 256 \
-# 	--warmup_steps 1237 \
-# 	--batch_size 2 \
-# 	--do_lower_case \
-# 	--train_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-train-subset.json" \
-# 	--dev_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-dev.json" \
-# 	--output_dir "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/output" \
-# 	--learning_rate 2e-05 \
-# 	--num_train_epochs 1 \
-# 	--dev_batch_size 16 \
-#  	--val_av_rank_start_epoch 1
+python -m torch.distributed.launch \
+	--nproc_per_node=1 train_dense_encoder.py \
+	--max_grad_norm 2.0 \
+	--encoder_model_type hf_bert \
+	--pretrained_model_cfg bert-base-uncased \
+	--seed 12345 \
+	--sequence_length 256 \
+	--warmup_steps 1237 \
+	--batch_size 2 \
+	--do_lower_case \
+	--train_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-train-subset.json" \
+	--dev_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-dev.json" \
+	--output_dir "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/output" \
+	--learning_rate 2e-05 \
+	--num_train_epochs 1 \
+	--dev_batch_size 16 \
+ 	--val_av_rank_start_epoch 1
 
 
-# python -m torch.distributed.launch \
-# 	--nproc_per_node=1 train_dense_encoder.py \
-# 	--max_grad_norm 2.0 \
-# 	--encoder_model_type hf_bert \
-# 	--pretrained_model_cfg bert-base-uncased \
-# 	--seed 12345 \
-# 	--sequence_length 256 \
-# 	--warmup_steps 1237 \
-# 	--batch_size 2 \
-# 	--do_lower_case \
-# 	--train_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/MSMARCO.dev.json" \
-# 	--dev_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-dev.json" \
-# 	--output_dir "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/output" \
-# 	--learning_rate 2e-05 \
-# 	--num_train_epochs 1 \
-# 	--dev_batch_size 16 \
-#  	--val_av_rank_start_epoch 1
+python -m torch.distributed.launch \
+	--nproc_per_node=1 train_dense_encoder.py \
+	--max_grad_norm 2.0 \
+	--encoder_model_type hf_bert \
+	--pretrained_model_cfg bert-base-uncased \
+	--seed 12345 \
+	--sequence_length 256 \
+	--warmup_steps 1237 \
+	--batch_size 2 \
+	--do_lower_case \
+	--train_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/MSMARCO.dev.json" \
+	--dev_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/retriever/nq-dev.json" \
+	--output_dir "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/output" \
+	--learning_rate 2e-05 \
+	--num_train_epochs 1 \
+	--dev_batch_size 16 \
+ 	--val_av_rank_start_epoch 1
 
 
 python generate_dense_embeddings.py \
@@ -88,7 +89,7 @@ python dense_retriever.py \
 	--ctx_file "/home/ahamsala/projects/def-ehyangit/ahamsala/DPR/data/wikipedia_split/psgs_w100_subset.tsv" \
 	--qa_file "data/retriever/nq-test.qa.csv" \
 	--encoded_ctx_file "data/inference_0.pkl" \
-	--out_file "result" \
+	--out_file "data/result" \
 	--n-docs 10 \
 	--validation_workers 16 \
 	--batch_size 32
