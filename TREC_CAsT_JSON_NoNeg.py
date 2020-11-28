@@ -1,6 +1,5 @@
 import argparse
 import json
-import trec_car as tc
 import csv
 import os
 from trec_car import read_data
@@ -26,6 +25,7 @@ def create_pid_2_pass(args,dup_dict):
     lines = open(args.input_dir + "collection.tsv", encoding='utf-8').readlines()  # Use to be collection.tsv
     pid_2_pass = {}  # pid -> passage
 
+    # Create our pid_2_passage dictionary
     for line in lines:
         id, passage = line.strip().split('\t')
         col_ID = 'MARCO' + '_' + id
@@ -33,7 +33,7 @@ def create_pid_2_pass(args,dup_dict):
             pid_2_pass[col_ID] = passage.rstrip()
         else:
             continue
-
+    # Write the collection.tsv to folder with CAR_partitions
     return pid_2_pass
 
 def partition_CAR(args):
@@ -45,7 +45,7 @@ def partition_CAR(args):
     num_bytes = 3e9  # Just for initialization
     size_threshold = 2e9  # Number of bytes to signal creation of new output .tsv file
 
-    for para in read_data.iter_paragraphs(open(args.input_dir + cbor_file, 'rb')):
+    for para in read_data.iter_paragraphs(open(args.ctx_files_dir + cbor_file, 'rb')):
         if num_bytes >= size_threshold:
             i += 1  # Will start at 1
             print(i)
@@ -54,14 +54,14 @@ def partition_CAR(args):
                 out_file.close()  # Close the file that surpassed size_threshold
             else:
                 pass
-            out_file = open(args.car_collection + 'CAR_collection_{}.tsv'.format(i), 'wt',
+            out_file = open(args.ctx_files_dir + 'CAR_collection_{}.tsv'.format(i), 'wt',
                             encoding='utf-8')  # Needed to add encoding
             tsv_writer = csv.writer(out_file, delimiter='\t')
 
         # Write to file
         tsv_writer.writerow(['CAR' + '_' + para.para_id, para.get_text()])  # ["CAR_PID", "passage"]
 
-        num_bytes = os.path.getsize(args.car_collection + 'CAR_collection_{}.tsv'.format(i))
+        num_bytes = os.path.getsize(args.ctx_files_dir + 'CAR_collection_{}.tsv'.format(i))
 
     return None
 
@@ -110,7 +110,7 @@ def search_car_qrel(args,car_scored, uid_2_pid):
 
     # Get CAR scored passages
     for i in range(1, 8):  # Spark would be better here
-        CAR_data = open(args.car_collection + 'CAR_collection_{}.tsv'.format(i)).readlines()
+        CAR_data = open(args.ctx_files_dir + 'CAR_collection_{}.tsv'.format(i)).readlines()
 
         # Create dict for doc_id -> index in current file then use index -> passage
         CAR_dict = {}
@@ -209,8 +209,8 @@ def main():
                         help="Set to where all data files will be stored")
 
     # Grab location for car collection and where partitions will be written to
-    parser.add_argument("--car_collection", default="", type=str,
-                        help="Location for storing CAR collection")
+    parser.add_argument("--ctx_files_dir", default="", type=str,
+                        help="Location for storing CAR and MSMARCO collection which will be used as ctx_file")
 
     # Set score threshold for what is considered a pos ctx
     parser.add_argument("--score_threshold", default=2, type=int,
@@ -239,6 +239,9 @@ def main():
     uid_2_query = create_uid_2_query(args)
     pre_json_data = format_2_json(args,uid_2_pid, uid_2_query)
     create_json(args, pre_json_data)
+
+    # CAR collection written to a folder already
+    # Need to write MSMARCO collection as well
 
 if __name__ == "__main__":
     main()

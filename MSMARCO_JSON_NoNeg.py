@@ -95,7 +95,7 @@ def create_json(args, pre_json_data):
     # MSMARCO.(train|dev|eval).json <- output file format.
     filename = 'MSMARCO' + '.' + args.query_filename.split('.')[1] + '.json' # Grab train|dev|eval
 
-    with open(args.output_dir + filename, 'w') as json_file:
+    with open(args.output_dir + filename, 'w') as json_file: # Try different encoding here maybe
         json.dump(list(pre_json_data.values()), json_file)
 
     json_file.close()
@@ -116,7 +116,7 @@ def main():
     parser.add_argument("--input_dir", default="", type=str,
                         help="Set to file path of where qrel and collection are located")
 
-    # Grab location of input data
+    # Grab loca
     parser.add_argument("--qrel_filename", default="", type=str,
                         help="Set to name of qrel file to be used")
 
