@@ -7,6 +7,9 @@
 module load python/3.6.3
 virtualenv --no-download $SLURM_TMPDIR/DPR
 source $SLURM_TMPDIR/DPR/bin/activate
+module load StdEnv/2020
+module load scipy-stack/2020b
+
 
 pip install cbor
 pip install trec-car-tools
@@ -43,6 +46,8 @@ cd ..
 cp input_data/"collection.tsv" ctx_files
 
 # CAN RUN ANYTHING IN SAME DIRECTORY ASLONG AS: sbatch NAME.sh
+# qrel_filename: change between qrels.dev.small.tsv and qrels.train.tsv
+# query_filename: queries.dev.tsv and queries.train.tsv
 time python MSMARCO_JSON_NoNeg.py  \
 --output_dir "json_data/" \
 --input_dir "input_data/" \
