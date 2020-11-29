@@ -4,8 +4,6 @@
 #SBATCH --time=0-05:00:00
 #SBATCH --output=%N-%j.out
 
-module load StdEnv/2020
-module load scipy-stack/2020b
 module load python/3.6.3
 virtualenv --no-download $SLURM_TMPDIR/DPR
 source $SLURM_TMPDIR/DPR/bin/activate
