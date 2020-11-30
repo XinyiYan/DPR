@@ -74,8 +74,18 @@ def format_2_json(pid_2_qid, qid_2_query):
                                                       "title_score":int(0),
                                                       "passage_id":str(pid)
                                                       }],
-                                   "negative_ctxs":[""],  # Leave empty since we in-batch sample
-                                   "hard_negative_ctxs":[""]}
+                                   "negative_ctxs":[{"title":"",
+                                                      "text": "",
+                                                      "score":0,
+                                                      "title_score":int(0),
+                                                      "passage_id":""
+                                                      }],  # Leave empty since we in-batch sample
+                                   "hard_negative_ctxs":[{"title":"",
+                                                      "text": "",
+                                                      "score":0,
+                                                      "title_score":int(0),
+                                                      "passage_id":""
+                                                      }]}
             else: # Already this qid in dictionary
                 qid_2_JSON[qid]["positive_ctxs"] += [{"title": "",
                                                       "text": passage,
