@@ -101,7 +101,7 @@ def main(args):
     with open(args.ctx_file) as tsvfile:
         reader = csv.reader(tsvfile, delimiter='\t')
         # file format: doc_id, doc_text, title
-        rows.extend([(row[0], row[1], row[2]) for row in reader if row[0] != 'id'])
+        rows.extend([(row[0], row[1], 'CAsT_title_placeholder') for row in reader if row[0] != 'id'])
 
     shard_size = int(len(rows) / args.num_shards)
     start_idx = args.shard_id * shard_size
@@ -110,7 +110,7 @@ def main(args):
     logger.info('Producing encodings for passages range: %d to %d (out of total %d)', start_idx, end_idx, len(rows))
     rows = rows[start_idx:end_idx]
 
-    data = gen_ctx_vectors(rows, encoder, tensorizer, True)
+    data = gen_ctx_vectors(rows, encoder, tensorizer, False)
 
     file = args.out_file + '_' + str(args.shard_id) + '.pkl'
     pathlib.Path(os.path.dirname(file)).mkdir(parents=True, exist_ok=True)
