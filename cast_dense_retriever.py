@@ -98,7 +98,7 @@ def parse_qa_csv_file(location) -> Iterator[Tuple[str, List[str]]]:
     with open(location) as ifile:
         reader = csv.reader(ifile, delimiter='\t')
         for row in reader:
-            question = row[0]
+            question = row[1]
             answers = ['not available']
             yield question, answers
 
