@@ -98,9 +98,10 @@ def parse_qa_csv_file(location) -> Iterator[Tuple[str, List[str]]]:
     with open(location) as ifile:
         reader = csv.reader(ifile, delimiter='\t')
         for row in reader:
+            question_id = row[0]
             question = row[1]
             answers = ['not available']
-            yield question, answers
+            yield question_id, question, answers
 
 
 def validate(passages: Dict[object, Tuple[str, str]], answers: List[List[str]],
@@ -135,7 +136,7 @@ def load_passages(ctx_file: str) -> Dict[object, Tuple[str, str]]:
     return docs
 
 
-def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], answers: List[List[str]],
+def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], question_ids: List[str], answers: List[List[str]],
                  top_passages_and_scores: List[Tuple[List[object], List[float]]], per_question_hits: List[List[bool]],
                  out_file: str
                  ):
@@ -143,6 +144,7 @@ def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], 
     merged_data = []
     assert len(per_question_hits) == len(questions) == len(answers)
     for i, q in enumerate(questions):
+        q_id = question_ids[i]
         q_answers = answers[i]
         results_and_scores = top_passages_and_scores[i]
         hits = per_question_hits[i]
@@ -151,6 +153,7 @@ def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], 
         ctxs_num = len(hits)
 
         merged_data.append({
+            'question_id': q_id,
             'question': q,
             'answers': q_answers,
             'ctxs': [
@@ -225,10 +228,12 @@ def main(args):
             retriever.index.serialize(index_path)
     # get questions & answers
     questions = []
+    question_ids = []
     question_answers = []
 
     for ds_item in parse_qa_csv_file(args.qa_file):
-        question, answers = ds_item
+        question_id, question, answers = ds_item
+        question_ids.append(question_id)
         questions.append(question)
         question_answers.append(answers)
 
@@ -246,7 +251,7 @@ def main(args):
                                   args.match)
 
     if args.out_file:
-        save_results(all_passages, questions, question_answers, top_ids_and_scores, questions_doc_hits, args.out_file)
+        save_results(all_passages, questions, question_ids, question_answers, top_ids_and_scores, questions_doc_hits, args.out_file)
 
 
 if __name__ == '__main__':
@@ -282,3 +287,4 @@ if __name__ == '__main__':
     setup_args_gpu(args)
     print_args(args)
     main(args)
+
