@@ -59,7 +59,7 @@ def partition_CAR(args):
             tsv_writer = csv.writer(out_file, delimiter='\t')
 
         # Write to file
-        tsv_writer.writerow(['CAR' + '_' + para.para_id, para.get_text()])  # ["CAR_PID", "passage"]
+        tsv_writer.writerow(['CAR' + '_' + para.para_id, ' '.join(para.get_text().split())])  # ["CAR_PID", "passage"]
 
         num_bytes = os.path.getsize(args.ctx_files_dir + 'CAR_collection_{}.tsv'.format(i))
 
