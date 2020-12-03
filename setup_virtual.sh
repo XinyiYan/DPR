@@ -8,7 +8,7 @@ source virtual_DPR/bin/activate
 
 pip install torch --no-index
 pip install --no-index torch torchvision torchtext torchaudio
-pip install --no-index transformers
+pip install --no-index 'transformers==3.0.2'
 pip install spacy[cuda] --no-index
 
 module load nixpkgs/16.09 gcc/7.3.0 cuda/10.1
