@@ -26,8 +26,6 @@
 33_6	Tell me about the Neverending Story film. Who was the author and when what it published?
 33_7	Tell me about the Neverending Story film. What are the main themes?
 33_8	Tell me about the Neverending Story film. Who are the main characters?
-33_9	Tell me about the Neverending Story film. What are the differences between the book and movies?
-33_10	Tell me about the Neverending Story film. Did the horse Artax really die?
 34_1	Tell me about the Bronze Age collapse.
 34_2	Tell me about the Bronze Age collapse. What is the evidence for it?
 34_3	Tell me about the Bronze Age collapse. What are some of the possible causes?
@@ -36,27 +34,6 @@
 34_6	Tell me about the Bronze Age collapse. What other factors led to a breakdown of trade?
 34_7	Tell me about the Bronze Age collapse. What about environmental factors?
 34_8	Tell me about the Bronze Age collapse. What empires survived?
-34_9	Tell me about the Bronze Age collapse. What came after it?
-35_1	Tell me about the history of toilets.
-35_2	Tell me about the history of toilets. Where does the term come from?
-35_3	Tell me about the history of toilets. Where and when was the first invented?
-35_4	Tell me about the history of toilets. Why do the Brits call it a loo?
-35_5	Tell me about the history of toilets. What came before them?
-35_6	Tell me about the history of toilets. When did indoor versions become common?
-35_7	Tell me about the history of toilets. How many types are there?
-35_8	Tell me about the history of toilets. Why are they so important for society?
-35_9	Tell me about the history of toilets. What is their role in film?
-36_1	What is the US Electoral College?
-36_2	What is the US Electoral College? How does it work?
-36_3	What is the US Electoral College? Tell me about its creation.
-36_4	What is the US Electoral College? Why was the system chosen?
-36_5	What is the US Electoral College? How has it changed over time?
-36_6	What is the US Electoral College? What if the electors don't vote for the pledged candidate?
-36_7	What is the US Electoral College? How has this changed election outcomes?
-36_8	What is the US Electoral College? Who are the Hamilton Electors and what were they trying to do?
-36_9	What is the US Electoral College? How would the College be abolished?
-36_10	What is the US Electoral College? How does the National Popular Vote Interstate Compact work?
-36_11	What is the US Electoral College? Is it legal?
 37_1	What was the Stanford Experiment?
 37_2	What was the Stanford Experiment? What did it show?
 37_3	What was the Stanford Experiment? Tell me about the author of the experiment.
@@ -65,27 +42,6 @@
 37_6	What was the Stanford Experiment? What happened in the Milgram experiment?
 37_7	What was the Stanford Experiment? Why was it important?
 37_8	What was the Stanford Experiment? What were the similarities and differences between the studies?
-37_9	What was the Stanford Experiment? What about the BBC experiment?
-37_10	What was the Stanford Experiment? What are the key findings?
-37_11	What was the Stanford Experiment? How did the results differ?
-37_12	What was the Stanford Experiment? Why was it ended?
-38_1	What is Lyme disease?
-38_2	What is Lyme disease? How do you get Lyme Disease?
-38_3	What is Lyme disease? How does it make you feel?
-38_4	What is Lyme disease? What happens if it goes untreated?
-38_5	What is Lyme disease? Can it kill you?
-38_6	What is Lyme disease? How reliable is the test?
-38_7	What is Lyme disease? Can it be cured?
-38_8	What is Lyme disease? What is Chronic Lyme?
-39_1	What does it mean to be a vegan?
-39_2	What does it mean to be a vegan? What is the environmental argument for it?
-39_3	What does it mean to be a vegan? Do you need milk for strong bones?
-39_4	What does it mean to be a vegan? What are other good sources of calcium?
-39_5	What does it mean to be a vegan? If you don't eat any meat, at all, is it bad for you?
-39_6	What does it mean to be a vegan? What are good sources of vitamin B12?
-39_7	What does it mean to be a vegan? Does it help you lose weight?
-39_8	What does it mean to be a vegan? What about its health effects versus being vegetarian?
-39_9	What does it mean to be a vegan? How does the environmental impact compare between them?
 40_1	What are the origins of popular music?
 40_2	What are the origins of popular music? What are its characteristics?
 40_3	What are the origins of popular music? What technological developments enabled it?
@@ -94,75 +50,6 @@
 40_6	What are the origins of popular music? Describe some of the influential pop bands.
 40_7	What are the origins of popular music? What makes a song pop punk?
 40_8	What are the origins of popular music? What is the difference between it and emo?
-40_9	What are the origins of popular music? How did Britpop change music?
-40_10	What are the origins of popular music? What are its roots and what influenced it?
-41_1	Why is the drinking age in the US 21 and not 18?
-41_2	Why is the drinking age in the US 21 and not 18? What were the pros and cons?
-41_3	Why is the drinking age in the US 21 and not 18? Tell me about the negative health effects of drinking.
-41_4	Why is the drinking age in the US 21 and not 18? How does binge drinking affect development?
-41_5	Why is the drinking age in the US 21 and not 18? Can it damage mental health?
-41_6	Why is the drinking age in the US 21 and not 18? What are the short and long-term effects of usage on brain chemicals?
-41_7	Why is the drinking age in the US 21 and not 18? Are alcoholics generally depressed?
-41_8	Why is the drinking age in the US 21 and not 18? What are the effects on vitamins and minerals?
-41_9	Why is the drinking age in the US 21 and not 18? Are there any benefits?
-42_1	What is Chattanooga famous for?
-42_2	What is Chattanooga famous for? What is there to do in downtown Chattanooga?
-42_3	What is Chattanooga famous for? Are there tourism activities related to trucks or trains?
-42_4	What is Chattanooga famous for? Are there any related to Bessie Smith?
-42_5	What is Chattanooga famous for? Can I visit some nearby distilleries?
-42_6	What is Chattanooga famous for? What is Rock City, and why is it famous?
-42_7	What is Chattanooga famous for? Are special events held there?
-42_8	What is Chattanooga famous for? What kind of food is Chattanooga known for?
-43_1	What are some interesting things around Ann Arbor?
-43_2	What are some interesting things around Ann Arbor? Tell me about when the city was founded.
-43_3	What are some interesting things around Ann Arbor? How does it relate to the establishment of the University?
-43_4	What are some interesting things around Ann Arbor? Does the Museum of Art have any special collections?
-43_5	What are some interesting things around Ann Arbor? What is the South Pond Nature Area?
-43_6	What are some interesting things around Ann Arbor? Are there any film festivals?
-43_7	What are some interesting things around Ann Arbor? How about for jazz?
-43_8	What are some interesting things around Ann Arbor? What are popular bars or clubs where I can listen to it?
-44_1	What causes acidic reflux in the morning?
-44_2	What causes acidic reflux in the morning? Does it have long term side effects?
-44_3	What causes acidic reflux in the morning? What is the best OTC for it?
-44_4	What causes acidic reflux in the morning? What are the side effects of long term PPI use?
-44_5	What causes acidic reflux in the morning? Tell me about natural treatments.
-44_6	What causes acidic reflux in the morning? What foods cause it?
-44_7	What causes acidic reflux in the morning? What ones reduce it?
-44_8	What causes acidic reflux in the morning? How does exercise affect it?
-45_1	What dog breed is the best for playing?
-45_2	What dog breed is the best for playing? What kind should I get if I’m allergic?
-45_3	What dog breed is the best for playing? How about big and active dogs?
-45_4	What dog breed is the best for playing? Do big dogs live longer than small dogs?
-45_5	What dog breed is the best for playing? Will I need to put a lot of time into training?
-45_6	What dog breed is the best for playing? Tell me about some breeds that are independent and can be left home all day.
-45_7	What dog breed is the best for playing? How much does a Irish Wolfhound weigh?
-45_8	What dog breed is the best for playing? How much do they cost?
-46_1	Why is learning a second language difficult?
-46_2	Why is learning a second language difficult? At what age is it harder and why?
-46_3	Why is learning a second language difficult? If I already know English, which language would be the easiest to learn?
-46_4	Why is learning a second language difficult? How can I begin learning Norwegian?
-46_5	Why is learning a second language difficult? Is it easier to learn than Spanish?
-46_6	Why is learning a second language difficult? What other languages are closest to it?
-46_7	Why is learning a second language difficult? Describe some of its similarities with Danish.
-46_8	Why is learning a second language difficult? How did all these languages evolve?
-46_9	Why is learning a second language difficult? How is it related to Old Norse?
-46_10	Why is learning a second language difficult? Are there advantages of knowing multiple languages?
-47_1	Why is Boise called the city of trees?
-47_2	Why is Boise called the city of trees? How did it get its name?
-47_3	Why is Boise called the city of trees? What is there to do in the summer?
-47_4	Why is Boise called the city of trees? What are popular hiking trails?
-47_5	Why is Boise called the city of trees? Tell me about the Oregon Trail Reserve.
-47_6	Why is Boise called the city of trees? Tell me about the history of the Boise Greenbelt.
-47_7	Why is Boise called the city of trees? What is the controversy around it?
-48_1	What is the main function of a virtual machine?
-48_2	What is the main function of a virtual machine? What are its advantages?
-48_3	What is the main function of a virtual machine? Describe some of its disadvantages.
-48_4	What is the main function of a virtual machine? How do they work?
-48_5	What is the main function of a virtual machine? What are the main types of VMs?
-48_6	What is the main function of a virtual machine? What is their role in cloud computing?
-48_7	What is the main function of a virtual machine? How is a container different?
-48_8	What is the main function of a virtual machine? What is the advantage of Docker?
-48_9	What is the main function of a virtual machine? How is it related Kurbenetes?
 49_1	How was Netflix started?
 49_2	How was Netflix started? How did it originally work?
 49_3	How was Netflix started? What is its relationship with Blockbuster?
@@ -171,8 +58,6 @@
 49_6	How was Netflix started? How does it compare to Amazon Prime Video?
 49_7	How was Netflix started? Describe it’s subscriber growth over time.
 49_8	How was Netflix started? How has it changed the way TV is watched?
-49_9	How was Netflix started? How has it impacted society?
-49_10	How was Netflix started? How about dating and relationships?
 50_1	What was the first artificial satellite?
 50_2	What was the first artificial satellite? What are the types of orbits?
 50_3	What was the first artificial satellite? What are the important classes of satellite?
@@ -181,37 +66,6 @@
 50_6	What was the first artificial satellite? Why did it create tension with the US?
 50_7	What was the first artificial satellite? What are Cubesats?
 50_8	What was the first artificial satellite? What are their advantages?
-50_9	What was the first artificial satellite? What are they used for?
-50_10	What was the first artificial satellite? What is their future?
-51_1	How do I save for a child’s college education in the US?
-51_2	How do I save for a child’s college education in the US? What is a 529 plan?
-51_3	How do I save for a child’s college education in the US? How does it work?
-51_4	How do I save for a child’s college education in the US? What are the main advantages?
-51_5	How do I save for a child’s college education in the US? What about disadvantages?
-51_6	How do I save for a child’s college education in the US? How long have they been around?
-51_7	How do I save for a child’s college education in the US? What are the types of plans?
-51_8	How do I save for a child’s college education in the US? What can the funds be used for?
-51_9	How do I save for a child’s college education in the US? What happens if it’s not used?
-51_10	How do I save for a child’s college education in the US? How does a ESA compare?
-52_1	Describe the Afra tanker scale.
-52_2	Describe the Afra tanker scale. Why was it developed?
-52_3	Describe the Afra tanker scale. What are supertankers?
-52_4	Describe the Afra tanker scale. Describe their invention.
-52_5	Describe the Afra tanker scale. What are the important factors led to their development?
-52_6	Describe the Afra tanker scale. What was the role of the Six-Day War?
-52_7	Describe the Afra tanker scale. How many barrels can a VLCC ship carry?
-52_8	Describe the Afra tanker scale. What is the largest in the world?
-52_9	Describe the Afra tanker scale. What new problem did increased scale create?
-52_10	Describe the Afra tanker scale. Describe crude oil washing.
-53_1	Is Red Bull bad for you?
-53_2	Is Red Bull bad for you? Can it kill you?
-53_3	Is Red Bull bad for you? How much can you drink in a day?
-53_4	Is Red Bull bad for you? What is taurine?
-53_5	Is Red Bull bad for you? What are its health effects?
-53_6	Is Red Bull bad for you? In general, what are the effects of consuming energy drinks?
-53_7	Is Red Bull bad for you? Why are they harmful when mixed with alcohol?
-53_8	Is Red Bull bad for you? What is the argument for their age restriction to kids?
-53_9	Is Red Bull bad for you? Where are they banned to minors?
 54_1	What is worth seeing in Washington D.C.?
 54_2	What is worth seeing in Washington D.C.? Which Smithsonian museums are the most popular?
 54_3	What is worth seeing in Washington D.C.? Why is the National Air and Space Museum important?
@@ -221,16 +75,6 @@
 54_7	What is worth seeing in Washington D.C.? Are there any famous foods?
 54_8	What is worth seeing in Washington D.C.? What is a DC half smoke?
 54_9	What is worth seeing in Washington D.C.? Tell me about its history.
-55_1	Describe the oceanic crust.
-55_2	Describe the oceanic crust. What are the main layers?
-55_3	Describe the oceanic crust. How does it differ from the continental crust?
-55_4	Describe the oceanic crust. Which is younger and why?
-55_5	Describe the oceanic crust. Where is the youngest oceanic found?
-55_6	Describe the oceanic crust. What about the oldest?
-55_7	Describe the oceanic crust. What is seafloor spreading?
-55_8	Describe the oceanic crust. What is its significance?
-55_9	Describe the oceanic crust. How is ocean crust formed?
-55_10	Describe the oceanic crust. Is it being recycled?
 56_1	What is Darwin’s theory in a nutshell?
 56_2	What is Darwin’s theory in a nutshell? How was it developed?
 56_3	What is Darwin’s theory in a nutshell? How do sexual and asexual reproduction affect it?
@@ -239,16 +83,6 @@
 56_6	What is Darwin’s theory in a nutshell? What is the impact on modern biology?
 56_7	What is Darwin’s theory in a nutshell? Compare and contrast microevolution and macroevolution.
 56_8	What is Darwin’s theory in a nutshell? What is the relationship to speciation?
-57_1	How can you tell if someone is suffering from depression?
-57_2	How can you tell if someone is suffering from depression? What are common types?
-57_3	How can you tell if someone is suffering from depression? What causes it?
-57_4	How can you tell if someone is suffering from depression? What is the role of brain chemicals?
-57_5	How can you tell if someone is suffering from depression? Does a lack of sunlight cause it?
-57_6	How can you tell if someone is suffering from depression? How can you treat SAD?
-57_7	How can you tell if someone is suffering from depression? What is the role of melatonin?
-57_8	How can you tell if someone is suffering from depression? How are anxiety and depression related?
-57_9	How can you tell if someone is suffering from depression? What treatments exist for depression?
-57_10	How can you tell if someone is suffering from depression? What is CBT and how does it work?
 58_1	What is a real-time database?
 58_2	What is a real-time database? How does it differ from traditional ones?
 58_3	What is a real-time database? What are the advantages of real-time processing?
@@ -265,13 +99,6 @@
 59_6	Which weekend sports have the most injuries? Is there disagreement about it?
 59_7	Which weekend sports have the most injuries? What is arnica used for?
 59_8	Which weekend sports have the most injuries? What are some ways to avoid injury?
-60_1	Tell me about the benefits of yoga.
-60_2	Tell me about the benefits of yoga. Does it help in reducing stress?
-60_3	Tell me about the benefits of yoga. What are some of the main types?
-60_4	Tell me about the benefits of yoga. What type is best for losing weight?
-60_5	Tell me about the benefits of yoga. What are common poses in Bikram yoga?
-60_6	Tell me about the benefits of yoga. Why is mindful breathing important?
-60_7	Tell me about the benefits of yoga. Does it help relieve asthma?
 61_1	Who are The Avengers?
 61_2	Who are The Avengers? Tell me about their first appearance.
 61_3	Who are The Avengers? Who is the most powerful and why?
@@ -280,58 +107,6 @@
 61_6	Who are The Avengers? What is an important team in the DC universe?
 61_7	Who are The Avengers? Tell me about the origins of the Justice League.
 61_8	Who are The Avengers? Who are the important members?
-61_9	Who are The Avengers? Which team came first?
-62_1	What is the Surrealism movement in art?
-62_2	What is the Surrealism movement in art? What are its characteristics?
-62_3	What is the Surrealism movement in art? Tell me about its founding.
-62_4	What is the Surrealism movement in art? Tell me about the series of manifestos.
-62_5	What is the Surrealism movement in art? How is it different from Dada?
-62_6	What is the Surrealism movement in art? What is its importance?
-62_7	What is the Surrealism movement in art? Who are the most famous artists?
-62_8	What is the Surrealism movement in art? Why did Dali choose surrealism?
-62_9	What is the Surrealism movement in art? What are his most iconic works?
-62_10	What is the Surrealism movement in art? Is it still used today?
-62_11	What is the Surrealism movement in art? What has its impact been on other fields?
-63_1	What is blockchain?
-63_2	What is blockchain? What problem does it solve?
-63_3	What is blockchain? How does it work?
-63_4	What is blockchain? What are the types of networks?
-63_5	What is blockchain? Tell me about its invention.
-63_6	What is blockchain? How is it related to cryptocurrencies?
-63_7	What is blockchain? How is Bitcoin generated?
-63_8	What is blockchain? How secure is blockchain?
-63_9	What is blockchain? What are its other uses in business?
-63_10	What is blockchain? What are the implications for society?
-64_1	What are the types of pork ribs?
-64_2	What are the types of pork ribs? What are baby backs?
-64_3	What are the types of pork ribs? What are the differences with spareribs?
-64_4	What are the types of pork ribs? What are ways to cook them?
-64_5	What are the types of pork ribs? How about on the bbq?
-64_6	What are the types of pork ribs? Describe the 321 method.
-64_7	What are the types of pork ribs? How long do they take to smoke?
-64_8	What are the types of pork ribs? How do you know when they are done?
-64_9	What are the types of pork ribs? What is in a typical rub?
-64_10	What are the types of pork ribs? What’s the best style of sauce for them?
-64_11	What are the types of pork ribs? What’s in Kansas City style sauce?
-65_1	What is nominal GDP?
-65_2	What is nominal GDP? Why is it not a good measure?
-65_3	What is nominal GDP? What is the difference with real?
-65_4	What is nominal GDP? How is it related to gross national income?
-65_5	What is nominal GDP? What is the meaning of GNI?
-65_6	What is nominal GDP? How is inflation affected by high GDP growth?
-65_7	What is nominal GDP? What is the relationship between inflation and unemployment?
-65_8	What is nominal GDP? What is frictional unemployment and why is it important?
-65_9	What is nominal GDP? Is it bad for the economy?
-65_10	What is nominal GDP? How can the government reduce its level?
-66_1	Tell me about lavender plants.
-66_2	Tell me about lavender plants. What are the different types?
-66_3	Tell me about lavender plants. What places are famous for them?
-66_4	Tell me about lavender plants. Are they safe to eat?
-66_5	Tell me about lavender plants. What variety is best for cooking?
-66_6	Tell me about lavender plants. How is it used?
-66_7	Tell me about lavender plants. What is it good with?
-66_8	Tell me about lavender plants. What are the health benefits of its oil?
-66_9	Tell me about lavender plants. Are there any side effects?
 67_1	Why is blood red?
 67_2	Why is blood red? What are red blood cells?
 67_3	Why is blood red? How are they created?
@@ -364,80 +139,13 @@
 69_8	How do you sleep after jet lag? How can I increase my levels naturally?
 69_9	How do you sleep after jet lag? Is it effective for treating insomnia?
 69_10	How do you sleep after jet lag? How about for anxiety?
-70_1	What is solar energy?
-70_2	What is solar energy? What are its main uses?
-70_3	What is solar energy? Why is it important?
-70_4	What is solar energy? What are advantages of solar energy?
-70_5	What is solar energy? What is the cost of solar power?
-70_6	What is solar energy? How is being used in rural Africa?
-70_7	What is solar energy? Tell me more about solar cookers work.
-70_8	What is solar energy? How is solar used in architecture?
-70_9	What is solar energy? What are important projects?
-70_10	What is solar energy? Can it be used to power cars?
-71_1	What are mammals?
-71_2	What are mammals? What are their key characteristics?
-71_3	What are mammals? How many legs do they have?
-71_4	What are mammals? What is the largest one on land?
-71_5	What are mammals? What is the largest in the world?
-71_6	What are mammals? What about in the UK?
-71_7	What are mammals? What about the largest to ever walk the earth?
-71_8	What are mammals? Tell me about Blue whales.
-71_9	What are mammals? How much do they weigh?
-71_10	What are mammals? Where do they live?
-71_11	What are mammals? What do they eat?
-71_12	What are mammals? Where can we see them?
-72_1	What do Spanish people do on Christmas day?
-72_2	What do Spanish people do on Christmas day? What do they eat for dinner?
-72_3	What do Spanish people do on Christmas day? How about on Christmas eve?
-72_4	What do Spanish people do on Christmas day? What is the Christmas Lottery?
-72_5	What do Spanish people do on Christmas day? How does the drawing work?
-72_6	What do Spanish people do on Christmas day? How are the tickets sold?
-72_7	What do Spanish people do on Christmas day? What is Tió de Nadal?
-72_8	What do Spanish people do on Christmas day? How did this tradition start?
-72_9	What do Spanish people do on Christmas day? How do they celebrate Three Kings Day?
-72_10	What do Spanish people do on Christmas day? What cakes are traditional?
-73_1	Who is the most successful pirate of all time?
-73_2	Who is the most successful pirate of all time? Who is the most famous female?
-73_3	Who is the most successful pirate of all time? Tell me more about Ching Shih.
-73_4	Who is the most successful pirate of all time? What were her code of laws?
-73_5	Who is the most successful pirate of all time? How did she die?
-73_6	Who is the most successful pirate of all time? Who was Anne Bonny?
-73_7	Who is the most successful pirate of all time? What was she famous for?
-73_8	Who is the most successful pirate of all time? Who was she married to?
-73_9	Who is the most successful pirate of all time? How did Calico Jack die?
-73_10	Who is the most successful pirate of all time? What happened to Anne?
-74_1	What are the pros and cons of electric cars?
-74_2	What are the pros and cons of electric cars? Tell me more about Tesla.
-74_3	What are the pros and cons of electric cars? Why did Elon Musk start it?
-74_4	What are the pros and cons of electric cars? What models are available?
-74_5	What are the pros and cons of electric cars? What is the best selling?
-74_6	What are the pros and cons of electric cars? What is unique about the Model 3?
-74_7	What are the pros and cons of electric cars? What are the safety features?
-74_8	What are the pros and cons of electric cars? Why is it building Gigafactories?
-74_9	What are the pros and cons of electric cars? What makes the batteries unique?
-74_10	What are the pros and cons of electric cars? How long can they last?
-74_11	What are the pros and cons of electric cars? Tell me more about autopilot.
-74_12	What are the pros and cons of electric cars? Does it support full self-driving?
 75_1	Why do turkey and Turkey share the same name?
 75_2	Why do turkey and Turkey share the same name? Where are turkeys from?
 75_3	Why do turkey and Turkey share the same name? What was their importance in native cultures?
 75_4	Why do turkey and Turkey share the same name? When and how were they domesticated?
 75_5	Why do turkey and Turkey share the same name? Can they fly?
 75_6	Why do turkey and Turkey share the same name? Why did Ben Franklin want it to be the national symbol?
-75_7	Why do turkey and Turkey share the same name? How did he cook it?
 75_8	Why do turkey and Turkey share the same name? Why is it eaten on Thanksgiving?
-75_9	Why do turkey and Turkey share the same name? How did it become traditional for Christmas dinner in Britain?
-75_10	Why do turkey and Turkey share the same name? When did they become popular?
-76_1	What are important literary elements?
-76_2	What are important literary elements? What is the difference between them and literary devices?
-76_3	What are important literary elements? What is a genre?
-76_4	What are important literary elements? What are the most important ones?
-76_5	What are important literary elements? What is a trope?
-76_6	What are important literary elements? What are important examples in fantasy?
-76_7	What are important literary elements? What is the definition of allegory?
-76_8	What are important literary elements? What are some important modern uses?
-76_9	What are important literary elements? What are the different types of foreshadowing?
-76_10	What are important literary elements? What is an example?
 77_1	What's the difference between soup and stew?
 77_2	What's the difference between soup and stew? Is chilli a stew?
 77_3	What's the difference between soup and stew? How about goulash?
@@ -446,8 +154,6 @@
 77_6	What's the difference between soup and stew? Tell me about feijoada and its significance.
 77_7	What's the difference between soup and stew? How is it similar or different from cassoulet?
 77_8	What's the difference between soup and stew? Tell about Bigos stew.
-77_9	What's the difference between soup and stew? Why is it important?
-77_10	What's the difference between soup and stew? What is the history of Irish stew?
 78_1	What is the keto diet?
 78_2	What is the keto diet? Why was it original developed?
 78_3	What is the keto diet? What is ketosis?
@@ -456,8 +162,6 @@
 78_6	What is the keto diet? How are they different?
 78_7	What is the keto diet? What is intermittent fasting?
 78_8	What is the keto diet? How is it related to keto?
-78_9	What is the keto diet? What is the 16/8 method?
-78_10	What is the keto diet? What is the best for weight loss?
 79_1	What is taught in sociology?
 79_2	What is taught in sociology? What is the main contribution of Auguste Comte?
 79_3	What is taught in sociology? What is the role of positivism in it?
@@ -467,13 +171,3 @@
 79_7	What is taught in sociology? What is its main criticism?
 79_8	What is taught in sociology? How does it compare to conflict theory?
 79_9	What is taught in sociology? What are modern examples of conflict theory?
-80_1	What were the purposes of the Lewis and Clark expedition?
-80_2	What were the purposes of the Lewis and Clark expedition? What were important plants and animals they discovered?
-80_3	What were the purposes of the Lewis and Clark expedition? What were the diplomatic objectives?
-80_4	What were the purposes of the Lewis and Clark expedition? What were the Native American tribes that they encountered?
-80_5	What were the purposes of the Lewis and Clark expedition? How did Sacagawea help them?
-80_6	What were the purposes of the Lewis and Clark expedition? Did they find the Northwest Passage?
-80_7	What were the purposes of the Lewis and Clark expedition? What was the purpose of Fort Mandan?
-80_8	What were the purposes of the Lewis and Clark expedition? How did they spend the next winter?
-80_9	What were the purposes of the Lewis and Clark expedition? What happened to Fort Clatsop?
-80_10	What were the purposes of the Lewis and Clark expedition? What was the impact of the expedition?
