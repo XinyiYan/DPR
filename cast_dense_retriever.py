@@ -164,7 +164,7 @@ def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], 
                     'text': docs[c][0],
                     'score': scores[c],
                     'has_answer': hits[c],
-                    'dense_vec': retriever.index.index.reconstruct(retriever.index.index_id_to_db_id.index(results_and_scores[0][c])).tolist()
+                    'dense_vec': retriever.index.index.reconstruct(retriever.index.db_id_to_index_id[results_and_scores[0][c]]).tolist()
                 } for c in range(ctxs_num)
             ]
         })
@@ -255,6 +255,11 @@ def main(args):
     if args.out_file:
         save_results(all_passages, questions, question_ids, question_answers,
                      top_ids_and_scores, questions_doc_hits, args.out_file, retriever)
+    tmp_docid = top_ids_and_scores[0][0][0]
+    tmp_docidx = retriever.index.db_id_to_index_id[tmp_docid]
+    print('tmp_docid', tmp_docid)
+    print('tmp_docidx', tmp_docidx)
+    print('tmp_doc_vec', retriever.index.index.reconstruct(tmp_docidx))
 
 
 if __name__ == '__main__':

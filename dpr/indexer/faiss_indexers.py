@@ -26,6 +26,7 @@ class DenseIndexer(object):
     def __init__(self, buffer_size: int = 50000):
         self.buffer_size = buffer_size
         self.index_id_to_db_id = []
+        self.db_id_to_index_id = {}
         self.index = None
 
     def index_data(self, vector_files: List[str]):
@@ -85,7 +86,13 @@ class DenseIndexer(object):
             self.index_id_to_db_id) == self.index.ntotal, 'Deserialized index_id_to_db_id should match faiss index size'
 
     def _update_id_mapping(self, db_ids: List):
+        idx = len(self.index_id_to_db_id)
         self.index_id_to_db_id.extend(db_ids)
+        for db_id in db_ids:
+            self.db_id_to_index_id[db_id] = idx
+            idx += 1
+        assert(len(self.index_id_to_db_id) == len(self.db_id_to_index_id))
+        
 
 
 class DenseFlatIndexer(DenseIndexer):
