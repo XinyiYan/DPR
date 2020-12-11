@@ -138,7 +138,8 @@ def load_passages(ctx_file: str) -> Dict[object, Tuple[str, str]]:
 
 def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], question_ids: List[str], answers: List[List[str]],
                  top_passages_and_scores: List[Tuple[List[object], List[float]]], per_question_hits: List[List[bool]],
-                 out_file: str
+                 out_file: str,
+                 retriever
                  ):
     # join passages text with the result ids, their questions and assigning has|no answer labels
     merged_data = []
@@ -163,6 +164,7 @@ def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], 
                     'text': docs[c][0],
                     'score': scores[c],
                     'has_answer': hits[c],
+                    'dense_vec': retriever.index.index.reconstruct(retriever.index.index_id_to_db_id.index(results_and_scores[0][c]))
                 } for c in range(ctxs_num)
             ]
         })
@@ -251,7 +253,8 @@ def main(args):
                                   args.match)
 
     if args.out_file:
-        save_results(all_passages, questions, question_ids, question_answers, top_ids_and_scores, questions_doc_hits, args.out_file)
+        save_results(all_passages, questions, question_ids, question_answers,
+                     top_ids_and_scores, questions_doc_hits, args.out_file, retriever)
 
 
 if __name__ == '__main__':
