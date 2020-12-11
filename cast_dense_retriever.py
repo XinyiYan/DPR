@@ -259,7 +259,7 @@ def main(args):
     tmp_docidx = retriever.index.db_id_to_index_id[tmp_docid]
     print('tmp_docid', tmp_docid)
     print('tmp_docidx', tmp_docidx)
-    print('tmp_doc_vec', retriever.index.index.reconstruct(tmp_docidx))
+    print('tmp_doc_vec', retriever.index.index.reconstruct(tmp_docidx).shape)
 
 
 if __name__ == '__main__':
