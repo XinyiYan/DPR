@@ -164,7 +164,7 @@ def save_results(passages: Dict[object, Tuple[str, str]], questions: List[str], 
                     'text': docs[c][0],
                     'score': scores[c],
                     'has_answer': hits[c],
-                    'dense_vec': retriever.index.index.reconstruct(retriever.index.index_id_to_db_id.index(results_and_scores[0][c]))
+                    'dense_vec': retriever.index.index.reconstruct(retriever.index.index_id_to_db_id.index(results_and_scores[0][c])).tolist()
                 } for c in range(ctxs_num)
             ]
         })
